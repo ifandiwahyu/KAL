@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; My sample book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Matriks Baris Elementer &#8212; My sample book</title>
   
   
   
@@ -56,9 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Determinan Matriks';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Matriks" href="Matriks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -121,8 +126,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -178,9 +181,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Matriks.html">Matriks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Determinan%C2%A0Matriks.html">Matriks Baris Elementer</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Matriks Baris Elementer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -253,7 +256,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDeterminan Matriks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -265,6 +268,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Determinan Matriks.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -306,7 +357,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -317,11 +370,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Matriks Baris Elementer</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear-dengan-eliminasi-baris-elementer">Penyelesaian Sistem Persamaan Linear dengan Eliminasi Baris Elementer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-sistem-persamaan">Diketahui sistem persamaan:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -331,13 +395,157 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="matriks-baris-elementer">
+<h1>Matriks Baris Elementer<a class="headerlink" href="#matriks-baris-elementer" title="Link to this heading">#</a></h1>
+<section id="penyelesaian-sistem-persamaan-linear-dengan-eliminasi-baris-elementer">
+<h2>Penyelesaian Sistem Persamaan Linear dengan Eliminasi Baris Elementer<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear-dengan-eliminasi-baris-elementer" title="Link to this heading">#</a></h2>
+<section id="diketahui-sistem-persamaan">
+<h3>Diketahui sistem persamaan:<a class="headerlink" href="#diketahui-sistem-persamaan" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}
+-7x_1 - 6x_2 - 12x_3 = -33 \\
+5x_1 + 5x_2 + 7x_3 = 24 \\
+x_1 + 4x_3 = 5
+\end{array}
+\end{split}\]</div>
+<p>Matriks yang sesuai:
+$<span class="math notranslate nohighlight">\(
+A = \begin{bmatrix} -7 &amp; -6 &amp; -12 \\ 5 &amp; 5 &amp; 7 \\ 1 &amp; 0 &amp; 4 \end{bmatrix}, \quad
+b = \begin{bmatrix} -33 \\ 24 \\ 5 \end{bmatrix}
+\
+\)</span>$</p>
+<p>Matriks augmented:
+$<span class="math notranslate nohighlight">\(
+\left[
+\begin{array}{ccc|c}
+-7 &amp; -6 &amp; -12 &amp; -33 \\
+5 &amp; 5 &amp; 7 &amp; 24 \\
+1 &amp; 0 &amp; 4 &amp; 5
+\end{array}
+\right]
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+\textbf{Langkah 1: Tukar} R_1 \leftrightarrow R_3\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+\left[
+\begin{array}{ccc|c}
+1 &amp; 0 &amp; 4 &amp; 5 \\
+5 &amp; 5 &amp; 7 &amp; 24 \\
+-7 &amp; -6 &amp; -12 &amp; -33
+\end{array}
+\right]
+\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[
+\textbf{Langkah 2: Eliminasi elemen di bawah pivot pertama}\]</div>
+<div class="math notranslate nohighlight">
+\[
+R_2 \to R_2 - 5R_1, \quad R_3 \to R_3 + 7R_1
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+1 &amp; 0 &amp; 4 &amp; 5 \\
+0 &amp; 5 &amp; -13 &amp; -1 \\
+0 &amp; -6 &amp; 16 &amp; 2
+\end{array}
+\right]
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\textbf{Langkah 3: Buat elemen (2,2) menjadi 1}\]</div>
+<div class="math notranslate nohighlight">
+\[
+R_2 \to \frac{1}{5} R_2
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+1 &amp; 0 &amp; 4 &amp; 5 \\
+0 &amp; 1 &amp; -\frac{13}{5} &amp; -\frac{1}{5} \\
+0 &amp; -6 &amp; 16 &amp; 2
+\end{array}
+\right]
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\textbf{Langkah 4: Eliminasi elemen di bawah (3,2)}\]</div>
+<div class="math notranslate nohighlight">
+\[
+R_3 \to R_3 + 6R_2
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+1 &amp; 0 &amp; 4 &amp; 5 \\
+0 &amp; 1 &amp; -\frac{13}{5} &amp; -\frac{1}{5} \\
+0 &amp; 0 &amp; \frac{18}{5} &amp; \frac{4}{5}
+\end{array}
+\right]
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\textbf{Langkah 5: Buat elemen (3,3) menjadi 1}\]</div>
+<div class="math notranslate nohighlight">
+\[
+R_3 \to \frac{5}{18} R_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+1 &amp; 0 &amp; 4 &amp; 5 \\
+0 &amp; 1 &amp; -\frac{13}{5} &amp; -\frac{1}{5} \\
+0 &amp; 0 &amp; 1 &amp; \frac{2}{9}
+\end{array}
+\right]
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\textbf{Langkah 6: Eliminasi elemen di atas (3,3)}\]</div>
+<div class="math notranslate nohighlight">
+\[
+R_2 \to R_2 + \frac{13}{5} R_3, \quad R_1 \to R_1 - 4R_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+1 &amp; 0 &amp; 0 &amp; \frac{41}{9} \\
+0 &amp; 1 &amp; 0 &amp; -\frac{11}{9} \\
+0 &amp; 0 &amp; 1 &amp; \frac{2}{9}
+\end{array}
+\right]
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\textbf{Hasil solusi:}\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 = \frac{41}{9}, \quad x_2 = -\frac{11}{9}, \quad x_3 = \frac{2}{9}
+\]</div>
+</section>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -349,12 +557,48 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Matriks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Matriks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear-dengan-eliminasi-baris-elementer">Penyelesaian Sistem Persamaan Linear dengan Eliminasi Baris Elementer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-sistem-persamaan">Diketahui sistem persamaan:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
