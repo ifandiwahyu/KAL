@@ -1,4 +1,3 @@
-
 ## Bukti Transformasi Linear Rotasi Bidang
 
 **Soal:**  
